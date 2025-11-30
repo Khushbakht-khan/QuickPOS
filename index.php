@@ -102,7 +102,7 @@ hero {
 <section class="hero">
 <div class="hero-container">
     <h1>The Last POS System You'll Ever Need</h1>
-    <p>Streamline your business operations with our powerful, easy-to-use point of sale system. Built for modern businesses.</p>
+    <p>Streamline your business operations with our powerful features and tools, easy-to-use point of sale system. Built for modern businesses.</p>
     <div class="hero-cta">
         <a href="#contact" class="btn btn-primary">Get Started for Free</a>
         <a href="#features" class="btn btn-secondary">Learn More</a>
@@ -135,6 +135,28 @@ hero {
     <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
         <div class="feature-icon"><i class="fas fa-mobile-alt"></i></div>
         <h3>Mobile Ready</h3>
+    </div>
+</div>
+</section>
+
+<!-- Features Section -->
+<section id="features" class="features">
+<div class="section-title" data-aos="fade-up">
+    <h2>Powerful Features for Your Business</h2>
+    <p>Everything You need to manage Your business efficiently in one place</p>
+</div>
+<div class="features-grid">
+    <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+        
+    </div>
+    <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+        
+    </div>
+    <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+        
+    </div>
+    <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+        
     </div>
 </div>
 </section>
