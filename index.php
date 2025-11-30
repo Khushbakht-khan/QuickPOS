@@ -116,7 +116,7 @@ hero {
 <!-- Features Section -->
 <section id="features" class="features">
 <div class="section-title" data-aos="fade-up">
-    <h2>Powerful Features for Your Business</h2>
+    <h2>Powerful Features/tools for Your Business</h2>
     <p>Everything You need to manage Your business efficiently in one place</p>
 </div>
 <div class="features-grid">
@@ -134,28 +134,6 @@ hero {
     </div>
     <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
         <div class="feature-icon"><i class="fas fa-mobile-alt"></i></div>
-        
-    </div>
-</div>
-</section>
-
-<!-- Features Section -->
-<section id="features" class="features">
-<div class="section-title" data-aos="fade-up">
-    <h2>Powerful Features for Your Business</h2>
-    <p>Everything You need to manage Your business efficiently in one place</p>
-</div>
-<div class="features-grid">
-    <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
-        
-    </div>
-    <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
-        
-    </div>
-    <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
-        
-    </div>
-    <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
         
     </div>
 </div>
