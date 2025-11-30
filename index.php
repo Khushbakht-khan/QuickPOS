@@ -79,7 +79,21 @@ nav { position:fixed; top:0; width:100%; background:rgba(255,255,255,0.95); back
 .form-group textarea { resize:vertical; min-height:150px; }
 .error-messages { color:red; margin-bottom:1rem; }
 
+/* Footer */
+footer { background:var(--dark); color:var(--white); padding:3rem 2rem 2rem; }
+.footer-container { max-width:1200px; margin:0 auto; }
+.footer-content { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:2rem; margin-bottom:2rem; }
+.footer-section h3 { margin-bottom:1rem; color:var(--white); }
+.social-links { display:flex; gap:1rem; margin-top:1rem; }
+.social-links a { width:40px; height:40px; background:rgba(255,255,255,0.1); border-radius:50%; display:flex; align-items:center; justify-content:center; color:var(--white); text-decoration:none; transition:all 0.3s; }
+.social-links a:hover { background:var(--primary); transform:translateY(-3px) scale(1.2); }
+.footer-bottom { text-align:center; padding-top:2rem; border-top:1px solid rgba(255,255,255,0.1); color:var(--gray); }
 
+/* Responsive */
+@media (max-width:768px) {
+    .mobile-menu-btn { display:block; }
+    .nav-links { display:none; flex-direction:column; gap:1rem; background:#fff; padding:1rem; position:absolute; top:60px; right:20px; border-radius:8px; }
+}
 </style>
 </head>
 <body>
@@ -228,8 +242,26 @@ nav { position:fixed; top:0; width:100%; background:rgba(255,255,255,0.95); back
 <footer>
 <div class="footer-container">
     <div class="footer-content">
-        
-            
+        <div class="footer-section">
+            <h3>QuickPOS</h3>
+            <p>The modern point of sale system built for businesses that want to grow.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-section">
+            <h3>Product</h3>
+            <p><a href="#features" style="color:var(--gray); text-decoration:none;">Features</a></p>
+            <p><a href="#pricing" style="color:var(--gray); text-decoration:none;">Pricing</a></p>
+        </div>
+        <div class="footer-section">
+            <h3>Company</h3>
+            <p><a href="#" style="color:var(--gray); text-decoration:none;">About Us</a></p>
+            <p><a href="#contact" style="color:var(--gray); text-decoration:none;">Contact</a></p>
+        </div>
     </div>
     <div class="footer-bottom">
         <p>&copy; 2025 QuickPOS. All rights reserved.</p>
