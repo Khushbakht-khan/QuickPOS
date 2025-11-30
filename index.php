@@ -46,8 +46,7 @@ nav { position:fixed; top:0; width:100%; background:rgba(255,255,255,0.95); back
 .mobile-menu-btn { display:none; font-size:1.5rem; color:var(--dark); cursor:pointer; }
 
 
-* Hero */
-.hero {
+hero {
     padding:120px 2rem 80px;
     background: linear-gradient(270deg, #FF6B6B, #4ECDC4, #FFD93D);
     background-size: 600% 600%;
@@ -68,7 +67,11 @@ nav { position:fixed; top:0; width:100%; background:rgba(255,255,255,0.95); back
 .hero-image { margin-top:3rem; position:relative; }
 .hero-image img { max-width:800px; width:100%; border-radius:15px; box-shadow:0 30px 60px rgba(0,0,0,0.3); opacity:0; animation:fadeUp 2s forwards; animation-delay:0.5s; }
 
-
+/* Fade-up Animation */
+@keyframes fadeUp {
+    from { transform:translateY(20px); opacity:0; }
+    to { transform:translateY(0); opacity:1; }
+}
 
 </style>
 </head>
@@ -87,11 +90,18 @@ nav { position:fixed; top:0; width:100%; background:rgba(255,255,255,0.95); back
     <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
 </div>
 </nav>
+<!-- Hero Section -->
 <section class="hero">
 <div class="hero-container">
     <h1>The Last POS System You'll Ever Need</h1>
-    <p>Streamline your business operations with our powerful tools, easy-to-use point of sale system. Built for modern businesses.</p>
-   
+    <p>Streamline your business operations with our powerful, easy-to-use point of sale system. Built for modern businesses.</p>
+    <div class="hero-cta">
+        <a href="#contact" class="btn btn-primary">Get Started for Free</a>
+        <a href="#features" class="btn btn-secondary">Learn More</a>
+    </div>
+    <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=500&fit=crop" alt="QuickPOS Dashboard">
+    </div>
 </div>
 </section>
 </script>
