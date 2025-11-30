@@ -57,6 +57,8 @@ nav { position:fixed; top:0; width:100%; background:rgba(255,255,255,0.95); back
 .feature-card h3 { font-size:1.5rem; margin-bottom:1rem; color:var(--dark); }
 .feature-card p { color:var(--gray); line-height:1.7; }
 
+.pricing { padding:80px 2rem; background:var(--light-gray); }
+.pricing-grid { max-width:1200px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:2rem; margin-top:3rem; }
 </style>
 </head>
 <body>
@@ -117,6 +119,32 @@ nav { position:fixed; top:0; width:100%; background:rgba(255,255,255,0.95); back
     </div>
 </div>
 </section>
+
+
+<section id="pricing" class="pricing">
+<div class="section-title" data-aos="fade-up">
+    <h2>Simple, Transparent Pricing</h2>
+    <p>Choose the plan that's right for your business</p>
+</div>
+<div class="pricing-grid">
+   
+    <div class="pricing-card" data-aos="fade-up" data-aos-delay="100">
+        
+    </div>
+    <!-- Pro -->
+    <div class="pricing-card featured" data-aos="fade-up" data-aos-delay="200">
+        <div class="pricing-badge">Most Popular</div>
+        
+        
+    </div>
+    <!-- Enterprise -->
+    <div class="pricing-card" data-aos="fade-up" data-aos-delay="300">
+        
+        
+    </div>
+</div>
+</section>
+
 </script>
 </body>
 </html>
