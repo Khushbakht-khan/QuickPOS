@@ -11,7 +11,13 @@ unset($_SESSION['errors'], $_SESSION['old']);
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>QuickPOS - The Last POS System You'll Ever Need for your business</title>
+<title>QuickPOS - The Last POS System You'll Ever Need</title>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<!-- AOS Animation Library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 
 <style>
 /* Root Colors */
@@ -43,7 +49,35 @@ nav { position:fixed; top:0; width:100%; background:rgba(255,255,255,0.95); back
 .btn-primary:hover { background:var(--primary-dark); transform:translateY(-3px) scale(1.05); box-shadow:0 10px 20px rgba(255,107,107,0.3); }
 .btn-secondary { background:transparent; color:var(--primary); border:2px solid var(--primary); }
 .btn-secondary:hover { background:var(--primary); color:var(--white); }
-.mobile-menu-btn { display:none; font-size:1.5rem; color:var(--dark); cursor:pointer; }
+.mobile-menu-btn { display:none; font-size:1.5rem; background:none; border:none; color:var(--dark); cursor:pointer; }
+
+/* Hero */
+.hero {
+    padding:120px 2rem 80px;
+    background: linear-gradient(270deg, #FF6B6B, #4ECDC4, #FFD93D);
+    background-size: 600% 600%;
+    animation: gradientBG 15s ease infinite;
+    color:var(--white);
+    text-align:center;
+    margin-top:70px;
+}
+@keyframes gradientBG {
+    0% { background-position:0% 50%; }
+    50% { background-position:100% 50%; }
+    100% { background-position:0% 50%; }
+}
+.hero-container { max-width:1200px; margin:0 auto; }
+.hero h1 { font-size:3.5rem; font-weight:800; margin-bottom:1.5rem; line-height:1.2; text-shadow:2px 2px 4px rgba(0,0,0,0.2); opacity:0; animation:fadeUp 1.5s forwards; }
+.hero p { font-size:1.25rem; margin-bottom:2rem; opacity:0.9; max-width:600px; margin-left:auto; margin-right:auto; }
+.hero-cta { margin-top:2rem; display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; }
+.hero-image { margin-top:3rem; position:relative; }
+.hero-image img { max-width:800px; width:100%; border-radius:15px; box-shadow:0 30px 60px rgba(0,0,0,0.3); opacity:0; animation:fadeUp 2s forwards; animation-delay:0.5s; }
+
+/* Fade-up Animation */
+@keyframes fadeUp {
+    from { transform:translateY(20px); opacity:0; }
+    to { transform:translateY(0); opacity:1; }
+}
 
 /* Features */
 .features { padding:80px 2rem; background:var(--white); }
@@ -67,7 +101,13 @@ nav { position:fixed; top:0; width:100%; background:rgba(255,255,255,0.95); back
     from { box-shadow:0 0 15px rgba(255,107,107,0.3); }
     to { box-shadow:0 0 30px rgba(255,107,107,0.6); }
 }
-
+.pricing-badge { position:absolute; top:-15px; left:50%; transform:translateX(-50%); background:var(--primary); color:var(--white); padding:0.5rem 1.5rem; border-radius:20px; font-size:0.875rem; font-weight:600; }
+.pricing-card h3 { font-size:1.75rem; margin-bottom:1rem; color:var(--dark); }
+.price { font-size:3rem; font-weight:800; color:var(--primary); margin:1rem 0; }
+.price span { font-size:1.25rem; color:var(--gray); }
+.pricing-features { list-style:none; margin:2rem 0; text-align:left; }
+.pricing-features li { padding:0.75rem 0; border-bottom:1px solid var(--light-gray); display:flex; align-items:center; gap:0.5rem; }
+.pricing-features i { color:var(--secondary); }
 
 /* Contact */
 .contact { padding:80px 2rem; background:var(--white); }
@@ -101,20 +141,22 @@ footer { background:var(--dark); color:var(--white); padding:3rem 2rem 2rem; }
 <!-- Navigation -->
 <nav>
 <div class="nav-container">
-    <div class="logo"><i class="fas fa-cash-register"></i> QuickPOS </div>
+    <div class="logo"><i class="fas fa-cash-register"></i> QuickPOS</div>
     <ul class="nav-links">
-        <li><a href="#features">Features </a></li>
-        <li><a href="#pricing">Pricing </a></li>
-        <li><a href="#contact">Contact </a></li>
-        <li><a href="#" class="btn btn-primary">Sign Up </a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#" class="btn btn-primary">Sign Up</a></li>
     </ul>
     <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
 </div>
 </nav>
+
+<!-- Hero Section -->
 <section class="hero">
 <div class="hero-container">
     <h1>The Last POS System You'll Ever Need</h1>
-    <p>Streamline your business operations with our powerful features and tools, easy-to-use point of sale system. Built for modern businesses.</p>
+    <p>Streamline your business operations with our powerful, easy-to-use point of sale system. Built for modern businesses.</p>
     <div class="hero-cta">
         <a href="#contact" class="btn btn-primary">Get Started for Free</a>
         <a href="#features" class="btn btn-secondary">Learn More</a>
@@ -154,7 +196,6 @@ footer { background:var(--dark); color:var(--white); padding:3rem 2rem 2rem; }
     </div>
 </div>
 </section>
-
 
 <!-- Pricing Section -->
 <section id="pricing" class="pricing">
@@ -207,8 +248,8 @@ footer { background:var(--dark); color:var(--white); padding:3rem 2rem 2rem; }
     </div>
 </div>
 </section>
+
 <!-- Contact Section -->
- <!--nothing to update already done-->
 <section id="contact" class="contact">
 <div class="contact-container" data-aos="fade-up">
     <h2>Get In Touch</h2>
@@ -238,6 +279,7 @@ footer { background:var(--dark); color:var(--white); padding:3rem 2rem 2rem; }
     </form>
 </div>
 </section>
+
 <!-- Footer -->
 <footer>
 <div class="footer-container">
@@ -268,6 +310,25 @@ footer { background:var(--dark); color:var(--white); padding:3rem 2rem 2rem; }
     </div>
 </div>
 </footer>
+
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+AOS.init({ duration:1200, once:true });
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if(target) target.scrollIntoView({ behavior:'smooth', block:'start' });
+    });
+});
+
+const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+const navLinks = document.querySelector('.nav-links');
+mobileMenuBtn.addEventListener('click', () => {
+    navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+});
 </script>
 </body>
 </html>
