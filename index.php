@@ -196,7 +196,16 @@ nav { position:fixed; top:0; width:100%; background:rgba(255,255,255,0.95); back
 <!-- Contact Section -->
 <section id="contact" class="contact">
 <div class="contact-container" data-aos="fade-up">
-    
+    <h2>Get In Touch</h2>
+    <?php if(!empty($errors)): ?>
+        <div class="error-messages">
+            <ul>
+                <?php foreach($errors as $error): ?>
+                    <li><?php echo $error; ?></li>
+                <?php endforeach; ?>
+            </ul>
+        </div>
+    <?php endif; ?>
     <form method="POST" action="process-contact.php">
         <div class="form-group">
             <label for="name">Name *</label>
