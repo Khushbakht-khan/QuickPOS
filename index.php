@@ -62,6 +62,13 @@ nav { position:fixed; top:0; width:100%; background:rgba(255,255,255,0.95); back
     <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
 </div>
 </nav>
+<section class="hero">
+<div class="hero-container">
+    <h1>The Last POS System You'll Ever Need</h1>
+    <p>Streamline your business operations with our powerful, easy-to-use point of sale system. Built for modern businesses.</p>
+   
+</div>
+</section>
 </script>
 </body>
 </html>
