@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     if (empty($_POST["email"])) {
-        $errors[] = "Email is required";
+        $errors[] = "Email is required to move next";
     } elseif (!filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)) {
         $errors[] = "Invalid email format";
     }
