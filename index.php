@@ -79,7 +79,21 @@ nav { position:fixed; top:0; width:100%; background:rgba(255,255,255,0.95); back
 .form-group textarea { resize:vertical; min-height:150px; }
 .error-messages { color:red; margin-bottom:1rem; }
 
+/* Footer */
+footer { background:var(--dark); color:var(--white); padding:3rem 2rem 2rem; }
+.footer-container { max-width:1200px; margin:0 auto; }
+.footer-content { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:2rem; margin-bottom:2rem; }
+.footer-section h3 { margin-bottom:1rem; color:var(--white); }
+.social-links { display:flex; gap:1rem; margin-top:1rem; }
+.social-links a { width:40px; height:40px; background:rgba(255,255,255,0.1); border-radius:50%; display:flex; align-items:center; justify-content:center; color:var(--white); text-decoration:none; transition:all 0.3s; }
+.social-links a:hover { background:var(--primary); transform:translateY(-3px) scale(1.2); }
+.footer-bottom { text-align:center; padding-top:2rem; border-top:1px solid rgba(255,255,255,0.1); color:var(--gray); }
 
+/* Responsive */
+@media (max-width:768px) {
+    .mobile-menu-btn { display:block; }
+    .nav-links { display:none; flex-direction:column; gap:1rem; background:#fff; padding:1rem; position:absolute; top:60px; right:20px; border-radius:8px; }
+}
 </style>
 </head>
 <body>
