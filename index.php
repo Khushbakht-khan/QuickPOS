@@ -45,6 +45,14 @@ nav { position:fixed; top:0; width:100%; background:rgba(255,255,255,0.95); back
 .btn-secondary:hover { background:var(--primary); color:var(--white); }
 .mobile-menu-btn { display:none; font-size:1.5rem; color:var(--dark); cursor:pointer; }
 
+/* Features */
+.features { padding:80px 2rem; background:var(--white); }
+.section-title { text-align:center; margin-bottom:3rem; }
+.section-title h2 { font-size:2.5rem; font-weight:800; margin-bottom:1rem; color:var(--dark); }
+.section-title p { font-size:1.1rem; color:var(--gray); max-width:600px; margin:0 auto; }
+.features-grid { max-width:1200px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:2rem; }
+.feature-card { padding:2rem; background:var(--light-gray); border-radius:12px; transition:all 0.4s; text-align:center; opacity:0; }
+.feature-card:hover { transform:translateY(-10px) scale(1.03); box-shadow:0 20px 40px rgba(0,0,0,0.1); }
 
 hero {
     padding:120px 2rem 80px;
@@ -118,17 +126,15 @@ hero {
     <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
         <div class="feature-icon"><i class="fas fa-chart-line"></i></div>
         <h3>Sales Analytics</h3>
-        <p>Get detailed insights into your sales performance with beautiful dashboards and comprehensive reports.</p>
+        
     </div>
     <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
         <div class="feature-icon"><i class="fas fa-plug"></i></div>
         <h3>Easy Integration</h3>
-        <p>Connect seamlessly with your existing tools including accounting software, e-commerce platforms, and more.</p>
     </div>
     <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
         <div class="feature-icon"><i class="fas fa-mobile-alt"></i></div>
         <h3>Mobile Ready</h3>
-        <p>Accept payments anywhere with our mobile app. Perfect for pop-up shops, events, and delivery services.</p>
     </div>
 </div>
 </section>
