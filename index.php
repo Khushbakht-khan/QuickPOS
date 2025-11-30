@@ -46,8 +46,8 @@ nav { position:fixed; top:0; width:100%; background:rgba(255,255,255,0.95); back
 .mobile-menu-btn { display:none; font-size:1.5rem; color:var(--dark); cursor:pointer; }
 
 
-* Hero */
-.hero {
+/* Hero */
+hero {
     padding:120px 2rem 80px;
     background: linear-gradient(270deg, #FF6B6B, #4ECDC4, #FFD93D);
     background-size: 600% 600%;
@@ -65,10 +65,14 @@ nav { position:fixed; top:0; width:100%; background:rgba(255,255,255,0.95); back
 .hero h1 { font-size:3.5rem; font-weight:800; margin-bottom:1.5rem; line-height:1.2; text-shadow:2px 2px 4px rgba(0,0,0,0.2); opacity:0; animation:fadeUp 1.5s forwards; }
 .hero p { font-size:1.25rem; margin-bottom:2rem; opacity:0.9; max-width:600px; margin-left:auto; margin-right:auto; }
 .hero-cta { margin-top:2rem; display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; }
-.hero-image { margin-top:3rem; position:relative; }
-.hero-image img { max-width:800px; width:100%; border-radius:15px; box-shadow:0 30px 60px rgba(0,0,0,0.3); opacity:0; animation:fadeUp 2s forwards; animation-delay:0.5s; }
 
 
+
+/* Fade-up Animation */
+@keyframes fadeUp {
+    from { transform:translateY(20px); opacity:0; }
+    to { transform:translateY(0); opacity:1; }
+}
 
 </style>
 </head>
