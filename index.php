@@ -52,12 +52,12 @@ nav { position:fixed; top:0; width:100%; background:rgba(255,255,255,0.95); back
 <!-- Navigation -->
 <nav>
 <div class="nav-container">
-    <div class="logo"><i class="fas fa-cash-register"></i> QuickPOS</div>
+    <div class="logo"><i class="fas fa-cash-register"></i> QuickPOS </div>
     <ul class="nav-links">
-        <li><a href="#features">Features</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#" class="btn btn-primary">Sign Up</a></li>
+        <li><a href="#features">Features </a></li>
+        <li><a href="#pricing">Pricing </a></li>
+        <li><a href="#contact">Contact </a></li>
+        <li><a href="#" class="btn btn-primary">Sign Up </a></li>
     </ul>
     <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
 </div>
