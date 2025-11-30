@@ -65,8 +65,40 @@ nav { position:fixed; top:0; width:100%; background:rgba(255,255,255,0.95); back
 <section class="hero">
 <div class="hero-container">
     <h1>The Last POS System You'll Ever Need</h1>
-    <p>Streamline your business operations with our powerful, easy-to-use point of sale system. Built for modern businesses.</p>
-   
+    <p>Streamline your business operations with our powerful features and tools, easy-to-use point of sale system. Built for modern businesses.</p>
+    <div class="hero-cta">
+        <a href="#contact" class="btn btn-primary">Get Started for Free</a>
+        <a href="#features" class="btn btn-secondary">Learn More</a>
+    </div>
+    <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=500&fit=crop" alt="QuickPOS Dashboard">
+    </div>
+</div>
+</section>
+
+<!-- Features Section -->
+<section id="features" class="features">
+<div class="section-title" data-aos="fade-up">
+    <h2>Powerful Features/tools for Your Business</h2>
+    <p>Everything You need to manage Your business efficiently in one place</p>
+</div>
+<div class="features-grid">
+    <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+        
+    </div>
+    <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="feature-icon"><i class="fas fa-chart-line"></i></div>
+        
+        
+    </div>
+    <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="feature-icon"><i class="fas fa-plug"></i></div>
+        
+    </div>
+    <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+        <div class="feature-icon"><i class="fas fa-mobile-alt"></i></div>
+        
+    </div>
 </div>
 </section>
 </script>
