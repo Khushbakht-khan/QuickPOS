@@ -91,7 +91,10 @@ nav { position:fixed; top:0; width:100%; background:rgba(255,255,255,0.95); back
 <div class="hero-container">
     <h1>The Last POS System You'll Ever Need</h1>
     <p>Streamline your business operations with our powerful tools, easy-to-use point of sale system. Built for modern businesses.</p>
-   
+   <div class="hero-cta">
+        <a href="#contact" class="btn btn-primary">Get Started for Free</a>
+        <a href="#features" class="btn btn-secondary">Learn More</a>
+    </div>
 </div>
 </section>
 </script>
