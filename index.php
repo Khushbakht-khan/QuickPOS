@@ -43,7 +43,7 @@ nav { position:fixed; top:0; width:100%; background:rgba(255,255,255,0.95); back
 .btn-primary:hover { background:var(--primary-dark); transform:translateY(-3px) scale(1.05); box-shadow:0 10px 20px rgba(255,107,107,0.3); }
 .btn-secondary { background:transparent; color:var(--primary); border:2px solid var(--primary); }
 .btn-secondary:hover { background:var(--primary); color:var(--white); }
-.mobile-menu-btn { display:none; font-size:1.5rem; background:none; border:none; color:var(--dark); cursor:pointer; }
+.mobile-menu-btn { display:none; font-size:1.5rem; color:var(--dark); cursor:pointer; }
 
 </style>
 </head>
