@@ -194,6 +194,7 @@ nav { position:fixed; top:0; width:100%; background:rgba(255,255,255,0.95); back
 </div>
 </section>
 <!-- Contact Section -->
+ <!--nothing to update already done-->
 <section id="contact" class="contact">
 <div class="contact-container" data-aos="fade-up">
     <h2>Get In Touch</h2>
