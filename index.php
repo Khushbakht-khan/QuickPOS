@@ -125,16 +125,16 @@ hero {
     </div>
     <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
         <div class="feature-icon"><i class="fas fa-chart-line"></i></div>
-        <h3>Sales Analytics</h3>
+        
         
     </div>
     <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
         <div class="feature-icon"><i class="fas fa-plug"></i></div>
-        <h3>Easy Integration</h3>
+        
     </div>
     <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
         <div class="feature-icon"><i class="fas fa-mobile-alt"></i></div>
-        <h3>Mobile Ready</h3>
+        
     </div>
 </div>
 </section>
