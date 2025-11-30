@@ -68,6 +68,18 @@ nav { position:fixed; top:0; width:100%; background:rgba(255,255,255,0.95); back
     to { box-shadow:0 0 30px rgba(255,107,107,0.6); }
 }
 
+
+/* Contact */
+.contact { padding:80px 2rem; background:var(--white); }
+.contact-container { max-width:600px; margin:0 auto; }
+.form-group { margin-bottom:1.5rem; }
+.form-group label { display:block; margin-bottom:0.5rem; font-weight:600; color:var(--dark); }
+.form-group input, .form-group textarea { width:100%; padding:1rem; border:2px solid var(--light-gray); border-radius:8px; font-size:1rem; font-family:inherit; transition:all 0.3s; }
+.form-group input:focus, .form-group textarea:focus { outline:none; border-color:var(--primary); box-shadow:0 0 10px rgba(255,107,107,0.3); }
+.form-group textarea { resize:vertical; min-height:150px; }
+.error-messages { color:red; margin-bottom:1rem; }
+
+
 </style>
 </head>
 <body>
@@ -181,7 +193,27 @@ nav { position:fixed; top:0; width:100%; background:rgba(255,255,255,0.95); back
     </div>
 </div>
 </section>
-
+<!-- Contact Section -->
+<section id="contact" class="contact">
+<div class="contact-container" data-aos="fade-up">
+    
+    <form method="POST" action="process-contact.php">
+        <div class="form-group">
+            <label for="name">Name *</label>
+            <input type="text" id="name" name="name" value="<?php echo $old['name'] ?? ''; ?>" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" value="<?php echo $old['email'] ?? ''; ?>" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" required><?php echo $old['message'] ?? ''; ?></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%;">Send Message</button>
+    </form>
+</div>
+</section>
 
 </script>
 </body>
