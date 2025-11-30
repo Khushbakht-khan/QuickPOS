@@ -224,7 +224,18 @@ nav { position:fixed; top:0; width:100%; background:rgba(255,255,255,0.95); back
     </form>
 </div>
 </section>
-
+<!-- Footer -->
+<footer>
+<div class="footer-container">
+    <div class="footer-content">
+        
+            
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 QuickPOS. All rights reserved.</p>
+    </div>
+</div>
+</footer>
 </script>
 </body>
 </html>
